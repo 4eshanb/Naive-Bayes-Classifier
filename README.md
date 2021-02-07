@@ -58,3 +58,23 @@ Each additional token should is a feature name:value pair separated by whitespac
 
 Look for these files in the features folder.
 
+# LIWC and Opinion Lexicon
+LIWC categories are used as another feature. A Python module that will take a tokenized input string and return a Counter
+object with various counts and features of the input text. 
+Features used:
+> Negative Emotion
+  Positive Emotion
+  Negations
+  Sadness
+  Positive feelings
+  Assent
+  Leisure
+
+The Opinion Lexicon is a set of positive words and a set of negative words For the features using this
+lexicon each word in both the positive and negative list of words will be a binary feature. So if the word
+appears in the review it will have a value of 1 and if it does not it will have a value of 0. 
+
+http://www.liwc.net/
+https://docs.python.org/2/library/collections.html
+http://www.liwc.net/LIWC2007LanguageManual.pdf
+https://www.kaggle.com/nltkdata/opinion-lexicon
