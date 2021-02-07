@@ -7,7 +7,7 @@ To do this, a Naive Bayes classifier is built and trained.
 
 ### Data  
 There is a total of 500 movie reviews: 250 that have been given a positive rating (an overall score
-> 5 out of 10) and 250 that have been given a negative rating (an overall score < 5). 
+\> 5 out of 10) and 250 that have been given a negative rating (an overall score < 5). 
 These reviews havebeen split into training, development, and testing files. 
 
 Each dataset contains a list of reviews. Each review has two facets, Overall, which specifies whether the
