@@ -74,7 +74,12 @@ The Opinion Lexicon is a set of positive words and a set of negative words For t
 lexicon each word in both the positive and negative list of words will be a binary feature. So if the word
 appears in the review it will have a value of 1 and if it does not it will have a value of 0. 
 
-http://www.liwc.net/
+http://www.liwc.net/ 
+
 https://docs.python.org/2/library/collections.html
+
 http://www.liwc.net/LIWC2007LanguageManual.pdf
+
 https://www.kaggle.com/nltkdata/opinion-lexicon
+
+
