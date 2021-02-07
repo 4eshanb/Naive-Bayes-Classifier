@@ -103,3 +103,5 @@ each case and write the results to a file named FEATURE SET-DATASET-informative-
 The classification program is used on the development data and testing data using both of the classifiers.
 
 Confusion Matrices and accuracies are in all-results.txt
+
+This was for an assignment in CSE 143 at UCSC with Professor Dilek Hakkani-Tür.
