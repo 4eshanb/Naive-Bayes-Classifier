@@ -74,7 +74,32 @@ The Opinion Lexicon is a set of positive words and a set of negative words For t
 lexicon each word in both the positive and negative list of words will be a binary feature. So if the word
 appears in the review it will have a value of 1 and if it does not it will have a value of 0. 
 
-http://www.liwc.net/
-https://docs.python.org/2/library/collections.html
-http://www.liwc.net/LIWC2007LanguageManual.pdf
+http://www.liwc.net/ 
+https://docs.python.org/2/library/collections.html 
+http://www.liwc.net/LIWC2007LanguageManual.pdf 
 https://www.kaggle.com/nltkdata/opinion-lexicon
+
+# Sentiment Classification
+
+The feature vectors are used to train a Naive Bayes classifier to automatically
+label unseen reviews as positive or negative.
+
+
+Created the training instances from the features created previously. 
+This is a list of tuples. 
+The first element of the tuple is the feature vector of the document (i.e., the dictionary
+of feature/value pairs). 
+The second element is the name of the category (i.e., positive or
+negative). 
+There should be one feature set for each of word features, word pos features,
+word pos liwc features, and word pos opinion features.
+Four Naive Bayes classifiers are created with the training instances created in the previous step.
+
+Save each classifier to disk using the following code snippet.
+
+The show_most_informative_features() method is used to find the most informative features in
+each case and write the results to a file named FEATURE SET-DATASET-informative-features.txt.
+
+The classification program is used on the development data and testing data using both of the classifiers.
+
+Confusion Matrices and accuracies are in all-results.txt
